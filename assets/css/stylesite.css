@@ -1,6 +1,7 @@
-div{
+.div1{
     position: center;
     margin: 50%;
+    background-image: image("assets\images\face.png");
 }
 .iphonese{
     background-image: url(iphoneSE.png);

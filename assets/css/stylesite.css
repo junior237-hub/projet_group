@@ -1,0 +1,947 @@
+.iphonese{
+    background-image: url(iphoneSE.png);
+    height: 600px; cursor: pointer; transition: 0.7s;
+    border: 1px solid black;
+}
+.iphoneese:hover{
+    border: 1px solid blue;
+    transition: 0.7s;
+}
+.presentation{
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 450px;
+    left: 800px;
+}
+.present{
+    text-align: center;
+    color: blue;
+    position: absolute;
+    top: 500px;
+    left: 950px;
+}
+.iphone11{
+    background-image: url(iphone11.jpg);
+    height: 550px;
+    cursor: pointer;
+}
+.iphone11pro{
+    background-image: url(iphone11pro.jpg);
+    height: 500px; cursor: pointer;
+}
+.ip11pro{
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 1500px;
+    left: 800px; 
+}
+.lien{
+    color: blue;
+    position: absolute;
+    top: 1590px;
+    left: 829px;
+}
+.presenta{
+ text-align: center;
+ position: absolute;
+ top: 1550px;
+ left: 700px;
+    color: white;
+ }
+ .airpods{
+     border: 1px solid white;
+     position: absolute;
+     left: 800px;
+     top: 1950px;
+     margin-bottom: 600px;
+ }
+ .nouveaute{
+     cursor: pointer;
+ }
+ .description{
+     font-size: 60px;
+     position: absolute;
+     top: 5px;
+ }
+ .lienc{
+    position: absolute;
+    top: 100px;
+    
+ }
+ .presa{
+     text-align: center;
+     font-size: 50px;
+ }
+ .clavier{
+     border: whitesmoke 3px solid;
+     position: absolute;
+     left: 600px;
+     margin-right: 200px;
+     background-color: whitesmoke;
+     
+ }
+ .stylo{
+     border:whitesmoke 2px solid;
+     position: absolute;
+     left: 150px;
+     height: 465px;
+     background-color: whitesmoke;
+ }
+ .poch{
+     border: whitesmoke 3px solid;
+     position: absolute;
+     top: 1180px;
+     left: 947px;
+     width: 27%;
+     height: 50%;background-color: whitesmoke;
+ }
+ .sk{
+    border:whitesmoke 3px solid;
+    position: absolute;
+    top: 1180px;
+    left: 600px;
+    width: 24%;
+    height: 50%;background-color: whitesmoke;
+ }
+ .sty{
+     border: whitesmoke 31px solid;
+     position: absolute;
+     top: 1180px;
+     width: 27%;
+     height: 50%;
+     left: 150px;
+     background-color: whitesmoke;
+
+ }
+ .pub{
+     position: absolute;
+     top: 1510px;
+     left: 150px;
+     width: 1170px;
+ }
+ .cl{
+     position: absolute;
+     top: 2040px;
+     left: 150px;
+     width: 87%;
+     height: 440PX;
+ }
+ .in{
+     
+     position: absolute;
+     top: 2500px;
+     left: 650px;
+     font-size: 50px;
+
+ }
+ .or{
+    position: absolute;
+    border: whitesmoke 3px solid;
+    top: 2700px;
+    left: 280px;
+    height: 50%;background-color: whitesmoke;
+
+ }
+ .ve{
+    position: absolute;
+    border: whitesmoke 3px solid;
+    top: 2700px; 
+    left: 640px;
+    height: 50%;background-color: whitesmoke;
+
+ }
+ .airp{
+    position: absolute;
+    border: whitesmoke 3px solid;
+    top: 2700px; 
+    left: 1000px;
+    height: 50%;background-color: whitesmoke;
+
+ }
+ .ali{
+     font-size: 50px;
+     position: absolute;
+     top: 3100px;
+     left: 650px;
+ }
+ .c1{
+    position: absolute;
+    border: whitesmoke 3px solid;
+    top: 2010px;
+    left: 280px;
+    height: 100%;background-color: whitesmoke;
+ }
+ .c2{
+    position: absolute;
+    border: whitesmoke 3px solid;
+    top: 3210px; 
+    left: 640px;
+    height: 50%;background-color: whitesmoke;
+
+ }
+ .c3{
+    position: absolute;
+    border: whitesmoke 3px solid;
+    top: 3210px; 
+    left: 1000px;
+    height: 50%;background-color: whitesmoke;
+
+
+ }
+ .u{
+     position: absolute;
+     top: 3800px;
+     columns: 3;
+     left: 450px;
+     text-decoration: none;
+ }
+ .u ul{
+     list-style-type: none;
+ }
+ .u a{
+     text-decoration: none;
+ }
+ .au{
+     position: absolute;
+     top: 3700px;
+     left: 640px;
+ }
+ .op{
+     border: whitesmoke 3px solid;
+     background-color: whitesmoke;
+ }
+ .pres{
+     column-width: 250px;
+     column-count: 2;
+     column-gap: 10em;
+ }
+.macpro{
+    position: absolute;
+    left: 640px;
+}
+.pro2{
+    position: absolute;
+    top: 400px;
+    left: 200px;
+}
+.pro3{
+    position: absolute;
+    top: 1000px;
+    left: 640px;
+}
+.mac{
+    position: absolute;
+    top: 1400px;
+    left: 230px;
+    border: 50px whitesmoke solid;
+    background-color: whitesmoke;
+    padding: 50px;
+    height: 400px;
+    
+}
+.pr1{
+
+    position: absolute;
+    top: 2300px;
+    border: whitesmoke 0px solid;
+    left: 220px;
+}
+.pr2{
+    position: absolute;
+    top: 2300px;
+    border: whitesmoke 0px solid;
+    left: 930px;  
+}
+.p{
+    position: absolute;
+    top: 2050px;
+    left: 225px;
+    border: solid 45px whitesmoke;
+    width: 576px;
+    background-color: whitesmoke;
+}
+.pi{
+    position: absolute;
+    top: 2050px;
+    left: 930px;
+    border: solid 49px whitesmoke;
+    width: 322px;
+    background-color: whitesmoke;
+}
+.ac{
+    text-align: center;
+    
+}
+.macp{
+    position: absolute;
+    top: 300px;
+    left: 100px;
+}
+.macpc{
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    
+}
+.tp{
+    
+    position: absolute;
+    top: 381px;
+    left: 40px;
+  color: black;
+
+}
+
+.mm{
+    position: absolute;
+    top: 250px;
+    left: 380px; 
+    color: black;
+}
+.m{
+    position: absolute;
+    top: 1830px;
+    left: 700px;   
+    color: black;
+}
+.prep{
+    position: absolute;
+    top: 1830px;
+    left: 1060px;  
+    color: black;
+}
+.prea{
+    position: absolute;
+    top: 1700px;
+    left: 1100px;
+}
+.t1{
+position: absolute;
+left: 200px;
+font-size: 21px;
+}
+.pa{
+    position: absolute;
+    left: 900px;
+    font-size: 21px; 
+    top: 500px;
+}
+.pap{
+    position: absolute;
+    left: 300px;
+    font-size: 21px; 
+    top: 900px;
+}
+.ipa{
+    height: 70%;
+    width: 49%;
+    position: absolute;
+    left: 690px;
+    top: 1400px;
+}
+.moji{
+    position: absolute;
+    height: 70%;
+    width: 48%;
+    top: 1400px;
+}
+.w{
+    position: absolute;
+    top: 2100px;
+  
+    border: white 160px solid;
+    left: 10px;
+    background-color:white
+}
+.ec{
+    position: absolute;
+    top: 2100px;
+    height: 40%;
+    width: 27%;
+    left: 690px;
+    border: white 160px solid;
+    background-color: whitesmoke;
+   
+    }
+.eco{
+    background-color: whitesmoke;
+    position: absolute;
+    top: 800px;
+    left: 790px;
+   
+}
+.cpa{
+    position: absolute;
+    top: 2600px;
+    width: 48%;
+    height: 70%;
+}
+.ko{
+    position: absolute;
+    top: 2600px;
+    left: 680px;
+    width: 50%;
+    height: 70%;
+}
+.ss{
+    height: 790px;
+}
+.i11{
+    background-image: url(ip11.jpg);
+    background-position-x: center;
+    height: 1000px;
+    background-repeat: no-repeat;
+    text-align: center;
+    
+   
+}
+.is{
+    background-image: url(iphose.jpg);
+    background-position-x: center;
+    height: 600px;
+    background-repeat:initial;
+    background-color: white;
+    text-align: center;
+    color: white;
+}
+.az{
+    position: absolute;
+    left: 1170px;
+    top: 1400px;
+    font-size: 20px;
+}
+.aco{
+    position: absolute;
+    top: 1900px;
+    left: 940px;
+    font-size: 30px;
+}
+.watch{
+    position: absolute;
+    top: 1900px;
+    left: 200px;
+    font-size: 30px;
+}
+.tv{
+    position: absolute;
+    top: 2600px;
+    left: 350px;
+    font-size: 30px;
+}
+.card{
+    position: absolute;
+    top: 2600px;
+    left: 1150px;
+    font-size: 30px;
+}
+.ww{
+    position: absolute;
+    top: 1200px;
+    left: 350px;
+    color: white;
+    font-size: 35px;
+}
+nav{
+    display: inline-block;
+   width: 1560px;
+    text-align: center;
+    background-attachment: fixed;
+    background-color: black;
+    color: white;
+    border: solid;
+    height: 
+    
+   }
+nav ul
+{
+list-style-type: none;
+}
+nav li
+{
+display: inline-block;
+margin-right: 15px;
+}
+nav a
+{
+font-size: 1.3em;
+color: white;
+padding-bottom: 3px;
+text-decoration: none;
+}
+nav a:hover
+{
+color: white;
+border-bottom: 3px solid #760001;
+}
+nav a:visited{
+    color: blanchedalmond
+}
+.ass{
+    height: 50%;
+    width: 100%;
+}
+.for{
+    position: absolute;
+    top: 110px;
+    left: 500px;
+    font-size: 32px;
+  }
+  .acq {
+    display: inline-block;
+    width: 1480px;
+     text-align: center;
+     background-attachment: fixed;
+     background-color: white;
+     color: white;
+     border: solid;
+     height: ;
+     word-spacing: 130px;
+     }
+     .acq a{
+    font-size: 1.3em;
+    color: black;
+    padding-bottom: 3px;
+    text-decoration: none;
+  }
+ .acq a:hover{
+    color: white;
+    border-bottom: 3px solid white;
+  }
+  .acq ul{
+      list-style-type: none;
+  }
+  .acq li{
+    display: inline-block;
+  }
+  .acp{
+    display: inline-block;
+    width: 1380px;
+     text-align: center;
+     background-attachment: fixed;
+     background-color: white;
+     color: white;
+     border: solid 30px;
+     word-spacing: 130px;
+  }
+  acp ul{
+      list-style-type: none;
+     }
+.acp li{
+    display: inline-block;
+}     
+.acp a{
+    font-size: 1.3em;
+    color: black;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+.acp a:hover{
+    color: white;
+    border-bottom: 3px solid white;
+}
+.face{
+    position: absolute;
+    top: 1100px;
+    left: 800px;
+    font-size: 30px;
+}
+.dir{
+    position: absolute;
+    top: 900px;
+}
+.secu{
+    position: absolute;
+    left: 600px;
+}
+.secur{
+    position: absolute;
+    top: 1600px;
+    left: 90px;
+    font-size: 20px;
+}
+.apu{
+    position: absolute;
+    height: 60%;
+    width: 70%;
+    left: 500px;
+    color: white;
+}
+.ui{
+    position: absolute;
+    left: 200px;
+}
+.ia{
+    position: absolute;
+    left: 800px;
+    background-color: black;
+}
+.ia1{
+    background-color:black;
+    height: 900px;
+}
+.io{
+    position: absolute;
+    left: 100px;
+}
+.lo{
+    position: absolute;
+    top: 300px;
+    left: 390px;
+    color: white;
+    background-color: white;
+}
+.ban{
+    background-color: black;
+    height: 900px;
+}
+.aaaq{
+    color: white;
+    position: absolute;
+    top: 360px;
+    left: 390px;
+    font-size: 25px;
+}
+.i3{
+   columns: 2;
+   position: absolute;
+   top: 1000px;
+   height: 580px;
+}
+.i4{
+    width: 47%;
+    position: absolute;
+    left: 820px;
+    top: 1000px;
+    height: 580px;
+}
+.i{
+    position: absolute;
+    top: 1800px;
+    left: 300px;
+    word-spacing: 100px;
+}
+.sq{
+    position: absolute;
+    top: 2100px;
+    left: 300px;
+    display: inline-block;
+    width: 240px;
+}
+.sq ul{
+    list-style-type: none;
+}
+.sq li{
+    display: inline-block;
+}
+.pie{
+    position: absolute;
+    top: 2100px;
+    left: 600px;
+    display: inline-block;
+    width: 240px;
+}
+.pie ul{
+    list-style-type: none;
+}
+.pie li{
+    display: inline-block;
+}
+.se{
+    position: absolute;
+    top: 2100px;
+    left: 900px;
+    display: inline-block;
+    width: 240px;
+}
+.se ul{
+    list-style-type: none;
+}
+.se li{
+    display: inline-block;
+}
+.aze{
+    position: absolute;
+    top: 2100px;
+    left: 1200px;
+    display: inline-block;
+    width: 240px;
+}
+.aze ul{
+    list-style-type: none;
+}
+.aze li{
+    display: inline-block;
+}
+.ui11{
+    position: absolute;
+    top: 1000px;
+    font-size: 17px;
+    text-align: center;
+}
+.proi{
+    position: absolute;
+    top: 1000px;
+    font-size: 17px;
+    text-align: center;
+    left: 1000px;
+    color: white;
+}
+.pm{
+    position: absolute;
+    top: 1050px;
+    left: 200px;
+}
+.mag{
+    position: absolute;
+    top: 1080px;
+    left: 800px ;
+}
+.penc{
+    position: absolute;
+    top: 1200px;
+    left: 200px;
+}
+.poo{
+    position: absolute;
+    left: 500px;
+    top: 100px;
+}
+.m11{
+    position: absolute;
+    top: 20px;
+    left: 300px;
+}
+.pib{
+    position: absolute;
+    top: 1900px;
+    left: 400px;
+}
+.pointu{
+    position: absolute;
+    top: 2200px;
+    left: 400px;
+}
+.p7{
+    position: absolute;
+    top: 3100px; 
+    left: 300px;
+}
+.lk{
+    position: absolute;
+    top: 0px; 
+    left: 400px;
+}
+.mlk{
+    position: absolute;
+    top: 0px;
+    left: 800px;
+}
+.cables{
+    position: absolute;
+    top: 0px;
+    left: 200px;
+}
+.irel{
+    position: absolute;
+    left: 600px;
+}
+.voir{
+    font-size: 25px;
+    background-color: white;
+ }
+.voir a{
+    text-decoration: none;
+}
+.asus{
+    height: 500px;
+    text-align: center;
+
+}
+.bn{
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    height: 300px;
+    width: 200px;
+}
+.pry{
+    position: absolute;
+    top: 300px;
+    left: 800px;
+    font-size: 24px;
+}
+.absolute
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(macos ca.jpg);
+    opacity: 0.5;
+    z-index: 1;
+    height: 300px;
+}
+.container_form
+{
+    height: 400px;
+    width: 100vw;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form
+{
+   background-color:;
+   height: 400px;
+   width: 40vw;
+   z-index: 2;
+   display: flex;
+   align-items: center;
+}
+.logo
+{
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    width: 50%;
+}
+.connexion
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 60%;
+}
+.connexion input
+{
+    height: 50px;
+    width: 250px;
+    text-indent: 30px;
+    border: 1px solid black;
+    background-color: #fff;
+    color:black;
+    outline: none;
+}
+.connexion input:focus
+{
+    border: 2px solid green;
+}
+.connexion .submit
+{
+    background-color: black;
+    color: #fff;
+    text-indent: unset;
+    cursor: pointer;
+}
+.connexion .submit:hover
+{
+    background-color: #fff;
+    color: green;
+}
+.vil{
+    position: absolute;
+    left: 500px;
+}
+a{
+text-decoration: none;
+}
+.lkm{
+    position: absolute;
+    left: 420px;
+    color: white;
+}
+.poup{
+    background-image: url(mac.jpg);
+}
+.final{
+    border: whitesmoke 20px solid;
+    position: absolute;
+    left: 500px;
+    top: 300px;
+}
+.piy{
+    background-image: url(tile_macos__eqcfqi9lz0qe_large);
+}
+.tabl{
+    position: absolute;
+    right: 170px;
+    height: 900px;
+}
+.table{
+    height: 900px;
+    background-color: whitesmoke;
+}
+.pagi{
+    background-color: lightblue;
+}
+.bloc2{
+    height: 400px;
+    font-size: 30px;
+}
+.image{
+    width: 100%;
+}
+.GFD{
+    position: absolute;
+    left: 500px;
+}
+.nbv{
+    height: 400px;
+}
+.pointe{
+    position: absolute;
+    left: 850px;
+    top: 3400px;
+}
+.sou{
+    height: 600px;
+    border-left-color: black;
+}
+.acf{
+    font-size: 35px;
+}
+.iai{
+    position: absolute;
+    top: 49px;
+    left: 585px;
+    color: green;
+    font-size: 30px;
+}
+.maxi{
+    position: absolute;
+    left: 600px;  
+    top: 43px;
+    color: red;
+    font-size: 30px;
+}
+.com{
+    position: absolute;
+    left: 660px; 
+    top: 19px; 
+    color: yellow;
+    font-size: 40px;
+
+}
+.blocs{
+    height: 100px;
+}
+.mobi{
+    display: inline-block;
+    width: 1300px;
+    list-style-type: none;
+}   
+.mobi li{
+    display: inline-block;
+}
+.texti{
+    display: inline-block;
+    list-style-type: none;
+    width: 1400px;
+}
+.texti li{
+    display: inline-block;
+}

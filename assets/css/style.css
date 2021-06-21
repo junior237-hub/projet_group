@@ -20,3 +20,27 @@
     border-top-color: transparent;
     animation: loader 1.2s linear infinite;
 }
+
+
+@keyframes loader
+{
+    25%
+    {
+        color: yellowgreen
+    }
+
+    50%
+    {
+        color:green
+    }
+
+    75%
+    {
+        color:red;
+    }
+
+    to
+    {
+        transform: rotate(360deg);
+    }
+}

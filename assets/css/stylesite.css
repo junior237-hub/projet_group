@@ -1,3 +1,6 @@
+div{
+    position: center;
+}
 .iphonese{
     background-image: url(iphoneSE.png);
     height: 600px; cursor: pointer; transition: 0.7s;

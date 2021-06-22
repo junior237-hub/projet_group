@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat' sans-serif;
 }
 
 .navbar-brand
@@ -11,3 +12,71 @@
     font-size: 100px;
 }
 
+.content-banner
+{
+    color: #ffffff;
+    background-image: url(../img/essambanner.jpg);
+    min-height: 400px;
+    height: 100%;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 120px;
+}
+
+.content-banner:before
+{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color:rgba(57,49,49,0.7);
+    top:0;
+    left:0;
+    z-index: 1 
+}
+
+.content-banner .first-title
+{
+    font-size: 44px;
+    font-weight:400;
+    line-height: 1.2;
+    position: relative;
+    z-index: 2;
+    margin: 0px 0px 12px;
+}
+
+.content-banner .banner-des
+{
+    font-size: 150%;
+    letter-spacing: 0;
+    position: relative;
+    z-index: 2;
+    font-weight: 400;
+    margin-top: 0
+}
+
+.banner-btn
+{
+    padding: 0 34px;
+    z-index: 1;
+    margin: 30px auto 25px;
+    line-height: 56px;
+    position: relative;
+    border-radius: 6px;
+    height: 56px;
+    font-size: 16px;
+    background-color:#fe4066;
+    display: inline-block;
+    color: #ffffff;
+    transform: 0.3s;
+    text-align: center;
+    text-decoration: none;
+}
+
+.banner-btn:hover
+{
+    color:wheat;
+}
+
+ 

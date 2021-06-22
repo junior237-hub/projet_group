@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav-link{
+    color: black;
+    font-weight: 600;
+}
+.navbar-brand{
+    color: #000;
+    font-size: 30px;
+    font-weight: 800;
+}
+.carousel-caption{
+   position: absolute;
+   top: 53%;
+   transform: translateY(-80%);
+   left: -8%;
+
+}
+.carousel-caption h1{
+    font-size: 70px;
+    font-weight: 400px;
+    color: black;
+}
+.carousel-caption p{
+    font-weight: 600px;
+    color: black; 
+}
+.btn0{
+   background-color: red; 
+   height: 45px;
+   width: 150px;
+   color: white;
+   outline: none;
+}

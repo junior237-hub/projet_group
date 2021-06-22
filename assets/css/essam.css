@@ -96,7 +96,7 @@
     background-color: transparent;
 }
 
-.nav-item .nav-link
+.nav-item 
  {
      display: block;
      line-height: 36px;
@@ -104,4 +104,43 @@
      font-weight: 500;
      color: #ffffff;
      transition: 0.15s;
+     height: 40px;
+     margin-bottom: 10px;
+     border-radius: 10px;
+     max-width: 200px;
+ }
+
+ 
+ .nav-item:hover
+ {
+     background-color:#fe4066;
+ }
+
+ .header-btn
+ {
+     border-radius: 30px;
+     color:#ffffff;
+     background-color: gray;
+     border:none;
+     font-weight: 500;
+     outline: none;
+     font-size: 15px;
+     padding: 7px 22px;
+ }
+
+ .header-btn:hover
+ {
+    background-color:#fe4066;
+    transition: 1s;
+ }
+
+ .fa
+ {
+     border: none;
+     cursor:pointer;
+ }
+
+ .navbar-scroll > .nav-link > .nav-item
+ {
+    color: black;
  }

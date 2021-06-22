@@ -32,7 +32,7 @@
                 // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
                 $('html, body').animate({
                   scrollTop: $(hash).offset().top
-                }, 800, function(){
+                }, 1000, function(){
              
                   // Add hash (#) to URL when done scrolling (default click behavior)
                   window.location.hash = hash;
@@ -49,9 +49,95 @@
               width: '100%';
               height: 8cm
             }
+            .float{
+              position:fixed;
+              width:60px;
+              height:60px;
+              bottom:40px;
+              right:40px;
+              background-color:rgb(135, 177, 167);
+              color:#FFF;
+              border-radius:50px;
+              text-align:center;
+              justify-content:center;
+              box-shadow: 2px 2px 3px #999;
+            }
+
+.my-float{
+	margin-top:22px;
+}
+#mySidenav a {
+  position: fixed;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  margin-top: 5cm;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#Acceuil {
+  top: 20px;
+  background-color: #04AA6D;
+}
+
+#Elec {
+  top: 80px;
+  background-color: #2196F3;
+}
+
+#Mob {
+  top: 140px;
+  background-color: #f44336;
+}
+
+#Men {
+  top: 200px;
+  background-color: #c01d5b;
+}
+
+#Mode {
+  top: 260px;
+  background-color: #c0951d;
+}
+
+#contact {
+  top: 320px;
+  background-color: #555
+}
+
+#about {
+  top: 380px;
+  background-color: rgb(0, 238, 255)
+}
+
           </style>
     </head>
     <body id="myPage">
+
+
+
+        <a href="#myPage" class="float">
+          <span style="margin-top: 20px" class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+
+        <div id="mySidenav" class="sidenav">
+          <a href="#body1" id="Acceuil">Acceuil</a>
+          <a href="#body2" id="Elec">Elec</a>
+          <a href="#body3" id="Mob">Mobilier</a>
+          <a href="#body4" id="Men">Ménager</a>
+          <a href="#body5" id="Mode">Mode</a>
+          <a href="#body6" id="contact">Contact</a>
+          <a href="#body7" id="about">À propos</a>
+        </div>
+
         <div id="body1">
             <div class="header" style="background-color: rgb(24, 24, 24);">
                 <h2 style="font-weight: 900; color: gray;">BIENVENUE</h2>
@@ -60,7 +146,7 @@
     
             <!-- BAR DE NAVIGATION -->
             <div id="navbar" style="background-image: url(Assets/img/IAN_IMG/ELEC.jpg); background-repeat: no-repeat; ">
-                <a href="#default"  id="logo"> <span style="color: green;">I</span> <span style="color: red;">A</span> <span style="color: yellow;">N</span> <img src="Assets/img/IAN_IMG/LOGO.jpg" alt="logo" width="200"><hr style="width: 500px; border: 2px solid #ce6a51; border-radius: 5px;"></a>
+                <a href="#body1"  id="logo"> <span style="color: green;">I</span> <span style="color: red;">A</span> <span style="color: yellow;">N</span> <img src="Assets/img/IAN_IMG/LOGO.jpg" alt="logo" width="200"><hr style="width: 500px; border: 2px solid #ce6a51; border-radius: 5px;"></a>
                 <div id="navbar-right">
                   <a class="active" href="body1" style="color: black;">Accueil<hr style="width: 60px; border: 2px solid #ce5151; border-radius: 5px;"></a>
                   <a href="#body2" >Electronique<hr style="width: 60px; border: 2px solid #6351ce; border-radius: 5px;"></a>

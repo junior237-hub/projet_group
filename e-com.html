@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>E COMMERCE</title>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <!-- JAVASCRIP -->
+        <script src="Assets/css/IAN_STYLE/nav-effet.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="Assets/css/IAN_STYLE/MENUBAR.css">
+        <link rel="stylesheet" href="Assets/css/IAN_STYLE/IANIAN.css">
+        <link rel="stylesheet" href="Assets/css/IAN_STYLE/SIGN_UP.css">
+        <link rel="stylesheet" href="Assets/css/IAN_STYLE/SIGN_UPT.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="Assets/css/IAN_STYLE/social_login.css">
+        <script>
+          $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+          
+              // Make sure this.hash has a value before overriding default behavior
+              if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+          
+                // Store hash
+                var hash = this.hash;
+          
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                  scrollTop: $(hash).offset().top
+                }, 800, function(){
+             
+                  // Add hash (#) to URL when done scrolling (default click behavior)
+                  window.location.hash = hash;
+                });
+              } // End if
+            });
+          });
+          </script>
+          <style>
+            #body2, #body3, #body4, #body5, #body6 {
+              padding: 2cm;
+            }
+            .img55{
+              width: '100%';
+              height: 8cm
+            }
+          </style>
+    </head>
+    <body id="myPage">
+        <div id="body1">
+            <div class="header" style="background-color: rgb(24, 24, 24);">
+                <h2 style="font-weight: 900; color: gray;">BIENVENUE</h2>
+                <p style="color: gray;">GLISSEZ POUR EFFECTUER VOS ACHATS.</p>
+            </div>
+    
+            <!-- BAR DE NAVIGATION -->
+            <div id="navbar" style="background-image: url(Assets/img/IAN_IMG/ELEC.jpg); background-repeat: no-repeat; ">
+                <a href="#default"  id="logo"> <span style="color: green;">I</span> <span style="color: red;">A</span> <span style="color: yellow;">N</span> <img src="Assets/img/IAN_IMG/LOGO.jpg" alt="logo" width="200"><hr style="width: 500px; border: 2px solid #ce6a51; border-radius: 5px;"></a>
+                <div id="navbar-right">
+                  <a class="active" href="body1" style="color: black;">Accueil<hr style="width: 60px; border: 2px solid #ce5151; border-radius: 5px;"></a>
+                  <a href="#body2" >Electronique<hr style="width: 60px; border: 2px solid #6351ce; border-radius: 5px;"></a>
+                  <a href="#body3" >Mobilier<hr style="width: 60px; border: 2px solid #6351ce; border-radius: 5px;"></a>
+                  <a href="#body4" >Ménager<hr style="width: 60px; border: 2px solid #6351ce; border-radius: 5px;"></a>
+                  <a href="#body5" >Mode<hr style="width: 60px; border: 2px solid #6351ce; border-radius: 5px;"></a>
+                  <a href="#body6" >Contact<hr style="width: 60px; border: 2px solid #6351ce; border-radius: 5px;"></a>
+                  <a href="#body7" >À propos<hr style="width: 60px; border: 2px solid #6351ce; border-radius: 5px;"></a>
+                </div>
+            </div>
+
+            <nav class="navbar" data-spy="affix" data-offset-top="350" style="font-size: 20px; background-color: rgb(255, 250, 250);">
+              <div class="container-fluid">
+                <form class="navbar-form navbar-left" action="/action_page.php">
+                  Obtenez des offres:
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Rechercher..." name="search" size="75">
+                    <div class="input-group-btn">
+                      <button class="btn btn-default" type="submit">
+                        <i class="glyphicon glyphicon-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right" >
+                  <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>Chariot</a></li>
+                  <li><a href="#" style="color: rgb(253, 73, 49);" onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><span class="glyphicon glyphicon-user"></span>S'inscrire</a></li>
+                  <li><a href="#" style="color: rgb(253, 73, 49);" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+              </div>
+
+
+
+              <!-- MODAL LOGIN -->
+              <!-- ------------------------------------------------------------------------------- -->
+              <div id="id01" class="modal">
+  
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img  src="Assets/img/IAN_IMG/login.jpg" alt="Avatar" class="avatar">
+                    <img src="Assets/img/IAN_IMG/login2.jpg" alt="Avatar" class="avatar">
+                  </div>
+              
+                  <div class="container">
+                    <label for="uname"><b>Nom d'utilisateur</b></label>
+                    <input type="text" placeholder="Saisissez votre nom d'utilisateur" name="uname" required class="input">
+              
+                    <label for="psw"><b>Mot de passe</b></label>
+                    <input type="password" placeholder="Entrer le mot de passe" name="psw" required class="input">
+                      
+                    <button type="submit" class="btnn">S'identifier</button>
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember" class="input"> Se souvenir de moi
+                    </label>
+                  </div>
+              
+                  <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn btnn2">Annuler</button>
+                    <span class="psw"> <a href="#">Mot de passe oublié ?</a></span>
+                  </div>
+                </form>
+              </div>
+
+
+              <!-- MODAL SIGN UP -->
+              <!-- ------------------------------------------------------------------------------- -->
+              <div id="id02" class="modal22">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close22" title="Close Modal">&times;</span>
+                <form class="modal-content22 animate" action="/action_page.php">
+                  <div class="container22">
+                    <h1>S'inscrire</h1>
+                    <p>Veuillez remplir ce formulaire pour créer un compte.</p>
+                    <hr style="border: 1px solid #f1f1f1; margin-bottom: 25px;">
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Entrez votre e-mail" name="email" required class="input11">
+              
+                    <label for="psw"><b>Mot de passe</b></label>
+                    <input type="password" placeholder="Entrer le mot de passe" name="psw" required class="input11">
+              
+                    <label for="psw-repeat"><b>Répéter le mot de passe</b></label>
+                    <input type="password" placeholder="Saisir le mot de pass à nouveau" name="psw-repeat" required class="input11">
+                    
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px" class="input11"> Se souvenir de moi
+                    </label>
+              
+                    <p>En créant un compte, vous acceptez nos <a href="#" style="color:dodgerblue">conditions et confidentialité</a>.</p>
+              
+                    <div class="clearfix22">
+                      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn btnn22">Annuler</button>
+                      <button type="submit" class="signupbtn btnn22">S'inscrire</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+            </nav>
+
+            <div class="content">
+                <div style="text-align:center" style="font-size: 28px;">
+                    <h2>Faite vous plaisir</h2>
+                    <p>Nos favorit dans chaque catégorie.</p>
+                  </div>
+                  
+                  <!-- The App Section -->
+                  <div class="container  slideanim">
+                    <div class="row">
+                      <div class="column-66">
+                        <h1 class="xlarge-font"><b>Iphone 11 PRO</b></h1>
+                        <h1 class="large-font" style="color:MediumSeaGreen;"><b>Pourquoi l'acheter?</b></h1>
+                        <p><span style="font-size:36px">
+                            Prenez des photos comme un pro.</span> 
+                            Appareils photo Pro <br> Un trio de choc. Un triple appareil photo visionnaire qui 
+                            démultiplie vos possibilités sans ajouter la moindre complexité. 
+                            Une autonomie qui fait un bond en avant sans précédent. 
+                            Une puce surpuissante qui va deux fois plus loin en matière 
+                            d’apprentissage automatique et repousse les limites de ce qu’un smart­phone peut faire. 
+                            Les capacités de cet iPhone sont telles qu’il est le premier à décrocher l’appellation Pro. 
+                            Et il la mérite. <b style="color: blue;"> 990 000 FCFA</b></p>
+                        <a href="TESTTOOO.html"><button class="button">Acheter Maintenant...</button></a>
+                      </div>
+                      <div class="column-33">
+                        <div class="SOS">
+                          <img src="Assets/img/IAN_IMG/IMAC/iphone-11-pro-select-2019-family.jpeg" alt="Jane" style="width:100%" class="image">
+                          <div class="overlay">
+                            <img src="Assets/img/IAN_IMG/IMAC/11B.jpg" alt="Mike" style="width:100%">
+                          </div>
+                        </div>
+                          <img  width="100%" height="100%">
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Clarity Section -->
+                  <div class="container  slideanim" style="background-color:#f1f1f1">
+                    <div class="row">
+                      <div class="column-33">
+                        <div class="SOS">
+                          <img src="Assets/img/IAN_IMG/IMAC/XPS.jpg" alt="Jane" style="width:100%" class="image">
+                          <div class="overlay">
+                            <img src="Assets/img/IAN_IMG/IMAC/XXX.jpg" alt="Mike" style="width:100%">
+                          </div>
+                      </div>
+                      </div>
+                      <div class="column-66">
+                        <h1 class="xlarge-font"><b>Ordinateur portable XPS 15</b></h1>
+                        <h1 class="large-font" style="color:red;"><b>Votre vision, plus vive encore.</b></h1>
+                        <p><span style="font-size:24px">A revolution in resolution.</span> Ordinateur portable 15,6" doté d’un écran InfinityEdge élégant au format 16:10 
+                            prenant en charge 100 % de la gamme de couleurs Adobe RVB 
+                            avec des détails exceptionnels, équipé de processeurs Intel® Core™ de 10e génération. <b style="color: blue;">  1 170 000 FCFA </b></p>
+                            <button data-toggle="popover" title="DELL XPS 15" 
+                            data-placement="top" data-content="Ecran de 15.6'' avec résolution
+                             Full HD (1920 x 1080 pixels) Dalle IPS : couleurs lumineuses et angles de vision larges. 
+                             Puce graphique NVIDIA GeForce GTX 1050 Ti avec 4 Go de mémoire dédiée GDDR5." class="button" style="background-color:red" >En savoir plus...</button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- The App Section -->
+                  <div class="container  slideanim">
+                    <div class="row">
+                      <div class="column-66">
+                        <h1 class="xlarge-font"><b>POLTRONESOFÀ</b></h1>
+                        <h1 class="large-font" style="color:MediumSeaGreen;"><b>Remise Jusqu'à 50 000 FCAF sur votre nouveau canapé</b></h1>
+                        <p><span style="font-size:36px">QUALITÉ AUTHENTIQUE.</span> Le Canapé que vous voulez, au prix que vous avez toujours rêvé <br>
+                            <s style="color: rgb(98, 98, 119);">150 000 FCFA </s> <b style="color: blue;">  100 000 FCAF </b></p>
+                        <a href="TESTTOOO.html"><button class="button">JE LE VEUX</button></a>
+                      </div>
+                      <div class="column-33">
+                          <img src="Assets/img/IAN_IMG/IMAC/CANAPE.jpg" width="100%" height="100%" >
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <div id="body2">
+          <h1>Electronique</h1><hr>
+            <div class="row">
+                <div class="columnE">
+                  <div class="card">
+                    <div class="SOS">
+                      <img class="row_img" class="img55" src="Assets/img/IAN_IMG/electro/1.jpg" alt="Jane" style="width:100%" class="image">
+                      <div class="overlay">
+                        <img class="img55" src="Assets/img/IAN_IMG/electro/1B.jpg" alt="Mike" style="width:100%">
+                      </div>
+                    </div>
+                    <div class="containerE  slideanim">
+                      <h2>Galaxy s20 Ultra</h2>
+                      <p class="title">SAMSUNG</p>
+                      <p>Il est disponible en version 4G ou 4G+5G <br> et avec 128 Go de stockage UFS 3.0.</p>
+                      <p style="color: blue;"> 609 000 FCFA</p>
+                      <p><a href="TESTTOOO.html"><button class="buttonE">Acheter</button> </a><br> <button data-toggle="popover" title="Galaxy s20 Ultra" 
+                        data-placement="top" data-content="Caméra. 108 Mpx. 3 capteurs. Taille d'écran. 6.9. pouces. 
+                        Définition. 3200 x 1440. pixels. Processeur Samsung. 12 Go, 16 Go. RAM. Batterie. 5000. mAh." class="button00">En savoir plus</button></p>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="columnE">
+                  <div class="card">
+                    <div class="SOS">
+                      <img class="img55" src="Assets/img/IAN_IMG/electro/XPS.jpg" alt="Jane" style="width:100%" class="image">
+                      <div class="overlay">
+                        <img class="img55" src="Assets/img/IAN_IMG/electro/XXX.jpg" alt="Mike" style="width:100%">
+                      </div>
+                  </div>
+                    <div class="containerE  slideanim">
+                      <h2>XPS 15</h2>
+                      <p class="title">DELL</p>
+                      <p> Puce graphique NVIDIA GeForce GTX 1050 Ti <br> avec 4 Go de mémoire dédiée GDDR5.</p>
+                      <p style="color: blue;">1 170 000 FCFA</p>
+                      <p><a href="TESTTOOO.html"><button class="buttonE">Acheter</button> </a><br><button data-toggle="popover" title="DELL XPS 15" 
+                        data-placement="top" data-content="Ecran de 15.6'' avec résolution
+                         Full HD (1920 x 1080 pixels) Dalle IPS : couleurs lumineuses et angles de vision larges. 
+                         Puce graphique NVIDIA GeForce GTX 1050 Ti avec 4 Go de mémoire dédiée GDDR5." class="button00">En savoir plus</button></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="columnE">
+                  <div class="card">
+                    <div class="SOS">
+                      <img class="img55" src="Assets/img/IAN_IMG/electro/mac2.jpg" alt="Jane" style="width:100%" class="image">
+                      <div class="overlay">
+                        <img class="img55" src="Assets/img/IAN_IMG/electro/mac22.jpg" alt="Mike" style="width:100%">
+                      </div>
+                  </div>
+                    <div class="containerE  slideanim">
+                      <h2>Macbook pro 13"</h2>
+                      <p class="title">APPLE</p>
+                      <p>Intel Core i5 quadricœur de 10e génération à 2 GHz <br> (Turbo Boost jusqu’à 3,8 GHz)</p>
+                      <p style="color: blue;">879 913 FCFA</p>
+                      <p><a href="TESTTOOO.html"><button class="buttonE">Acheter</button> </a><br> <button data-toggle="popover" title="Macbook pro 13"" 
+                        data-placement="top" data-content="Avec sa TouchBar et Touch ID, 
+                        l'Apple MacBook Pro 13 est un ultraportable équipé du processeur 
+                        Intel Core i5 et doté d'un écran IPS WQXGA de 13,3 pouces. 
+                        Il est compact par ses dimensions et embarque 512 Go de stockage 
+                        SSD avec 8 Go de mémoire vive." class="button00">En savoir plus</button></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="columnE">
+                    <div class="card">
+                      <div class="SOS">
+                        <img class="img55" src="Assets/img/IAN_IMG/electro/drone.jpg" alt="Jane" style="width:100%" class="image">
+                        <div class="overlay">
+                          <img class="img55" src="Assets/img/IAN_IMG/electro/drone2.jpg" alt="Mike" style="width:100%">
+                        </div>
+                    </div>
+                      <div class="containerE  slideanim">
+                        <h2>DJI Inspire 2</h2>
+                        <p class="title">DRONE DJI </p>
+                        <p>RAW Cinéma, de 0 à 80 km/h en 5 secondes, Vitesse Max 94 km / h</p>
+                        <p style="color: blue;">290 000 FCFA</p>
+                        <p><a href="TESTTOOO.html"><button class="buttonE">Acheter</button> </a><br> <button data-toggle="popover" title="DJI Inspire 2" 
+                          data-placement="top" data-content="3290 grammes. 7 kilomètres. 5.2 K.
+                          108 km/h. 27 minutes. 6000 mAh. 5000 mètres." class="button00">En savoir plus</button></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="columnE">
+                    <div class="card">
+                      <div class="SOS">
+                        <img class="img55" src="Assets/img/IAN_IMG/electro/XBOX.jpg" alt="Jane" style="width:100%" class="image">
+                        <div class="overlay">
+                          <img class="img55" src="Assets/img/IAN_IMG/electro/XBOX2.jpg" alt="Mike" style="width:100%">
+                        </div>
+                    </div>
+                      <div class="containerE  slideanim">
+                        <h2>XBOX Series X</h2>
+                        <p class="title">MICROSOFT</p>
+                        <p>Decouvrez La belle  Xbox Series X (Scarlett)</p>
+                        <p style="color: blue;"> 300 000 FCFA</p>
+                        <p><a href="TESTTOOO.html"><button class="buttonE">Acheter</button> </a> <br> <button data-toggle="popover" title="XBOX Series X" 
+                          data-placement="top" data-content="processeur 8 cœurs AMD Zen 2 (3,8 GHz ou 3,6 GHz avec SMT).
+                          puce graphique AMD Navi RDNA 2 (52 CU à 1,825 GHz, 12 TFLOPS FP32). 
+                          16 Go de GDDR6 (10 Go à 560 Go/s et 6 Go à 336 Go/s).
+                          1 To de stockage SSD NVME (2,4 Go/s en lecture, ou 4,8 Go/s avec compression)." class="button00">En savoir plus</button></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="columnE">
+                    <div class="card">
+                      <div class="SOS">
+                        <img class="img55" src="Assets/img/IAN_IMG/electro/raw.jpg" alt="Jane" style="width:100%" class="image">
+                        <div class="overlay">
+                          <img class="img55" src="Assets/img/IAN_IMG/electro/raw2.jpg" alt="Mike" style="width:100%">
+                        </div>
+                    </div>
+                      <div class="containerE  slideanim">
+                        <h2>Apple Watch Series 5 </h2>
+                        <p class="title">APPLE</p>
+                        <p>La montre connectée se dote d’un écran always-on</p>
+                        <p style="color: blue;"> 500 000 FCFA</p>
+                        <p><a href="TESTTOOO.html"><button class="buttonE">Acheter</button> </a><br> <button data-toggle="popover" title="Apple Watch Series 5" 
+                          data-placement="top" data-content="L’Apple Watch Series 5 conserve le design 
+                          introduit avec la Series 4, qui offre un écran plus large. Désormais,
+                           il peut être allumé en permanence. Disponible avec quatre finitions 
+                           (aluminium, acier inoxydable, titane ou céramique),cette montre embarque 
+                           toujours un GPS, un capteur cardiaque et, en option un module 4G." class="button00">En savoir plus</button></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <div id="body3">
+          <h1>Fauteuils & Canapés</h1><hr>
+            <div class="row">
+                <div class="columnE">
+                  <div class="card">
+                    <div class="SOS">
+                        <img class="img55" src="Assets/img/IAN_IMG/Mobilier/C1.jpg" alt="Jane" style="width:100%" class="image">
+                        <div class="overlay">
+                          <img class="img55" src="Assets/img/IAN_IMG/Mobilier/C1B.jpg" alt="Mike" style="width:100%">
+                        </div>
+                      </div>
+                    <div class="containerE  slideanim">
+                      <h2>Canapé ENZO</h2>
+                      <p class="title">ENZO</p>
+                      <p>Canapé 2 dossiers relaxation, en tissu L. <br> 220 x H. 83 x P. 112/128. Coussin déco en option.</p>
+                      <p style="color: blue;">90 000 FCFA</p>
+                      <p><a href="TESTTOOO.html"><button class="buttonE">Acheter</button> </a><br> <button class="button00">En savoir plus</button></p>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="columnE">
+                  <div class="card">
+                    <div class="SOS">
+                        <img class="img55" src="Assets/img/IAN_IMG/Mobilier/C2.jpg" alt="Jane" style="width:100%" class="image">
+                        <div class="overlay">
+                          <img class="img55" src="Assets/img/IAN_IMG/Mobilier/C2B.jpg" alt="Mike" style="width:100%">
+                        </div>
+                      </div>
+                    <div class="containerE  slideanim">
+                      <h2>Fauteuil URBAN</h2>
+                      <p class="title">URBAN</p>
+                      <p>DANS UN MINIMUM DE PLACE GRACE AU SYSTEME DOS AU MUR. <br> L. 71 x H. 70 x P. 76.</p>
+                      <p style="color: blue;">170 000 FCFA</p>
+                      <p><a href="TESTTOOO.html"><button class="buttonE">Acheter</button> </a> <br><button class="button00">En savoir plus</button></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="columnE">
+                  <div class="card">
+                    <div class="SOS">
+                        <img class="img55" src="Assets/img/IAN_IMG/Mobilier/C5.jpg" alt="Jane" style="width:100%" class="image">
+                        <div class="overlay">
+                          <img class="img55" src="Assets/img/IAN_IMG/Mobilier/C5B.jpg" alt="Mike" style="width:100%">
+                        </div>
+                      </div>
+                    <div class="containerE  slideanim">
+                      <h2>Canapé BRISTOL</h2>
+                      <p class="title">BRISTOL</p>
+                      <p>HABILLÉ DE CUIR ÉPAIS AU TOUCHER NATUREL,<br> CE SALON EXPRIME TOUTE SA MAJESTÉ. <br>
+                        L. 230 x H. 71/98 x P. 110.</p>
+                      <p style="color: blue;">210 000 FCFA</p>
+                      <p><a href="TESTTOOO.html"><button class="buttonE">Acheter</button> </a><br> <button class="button00">En savoir plus</button></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="columnE">
+                    <div class="card">
+                        <div class="SOS">
+                            <img class="img55" src="Assets/img/IAN_IMG/Mobilier/C4.jpg" alt="Jane" style="width:100%" class="image">
+                            <div class="overlay">
+                              <img class="img55" src="Assets/img/IAN_IMG/Mobilier/C4B.jpg" alt="Mike" style="width:100%">
+                            </div>
+                          </div>
+                      <div class="containerE  slideanim">
+                        <h2>Fauteuil ESTER</h2>
+                        <p class="title">ESTER</p>
+                        <p>L. 66 x H. 78 x P. 100 avec coussin repose-tête.</p>
+                        <p style="color: blue;">50 000 FCFA</p>
+                        <p><a href="TESTTOOO.html"><button class="buttonE">Acheter</button> </a><br> <button class="button00">En savoir plus</button></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="columnE">
+                    <div class="card">
+                        <div class="SOS">
+                            <img class="img55" src="Assets/img/IAN_IMG/Mobilier/C3.jpg" alt="Jane" style="width:100%" class="image">
+                            <div class="overlay">
+                              <img class="img55" src="Assets/img/IAN_IMG/Mobilier/C3B.jpg" alt="Mike" style="width:100%">
+                            </div>
+                          </div>
+                      <div class="containerE  slideanim">
+                        <h2>Canapé relaxation MONZA</h2>
+                        <p class="title">MONZA</p>
+                        <p>LA RELAXATION GRAND FORMAT<br>
+                            L. 234 x H. 74/96 x P. 107.</p>
+                        <p style="color: blue;"> 79 000 FCFA</p>
+                        <p><a href="TESTTOOO.html"><button class="buttonE">Acheter</button> </a> <br> <button class="button00">En savoir plus</button></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="columnE">
+                    <div class="card">
+                        <div class="SOS">
+                            <img class="img55" src="Assets/img/IAN_IMG/Mobilier/C6.jpg" alt="Jane" style="width:100%" class="image">
+                            <div class="overlay">
+                              <img class="img55" src="Assets/img/IAN_IMG/Mobilier/C6B.jpg" alt="Mike" style="width:100%">
+                            </div>
+                          </div>
+                      <div class="containerE  slideanim">
+                        <h2>Fauteuil relaxation EROS</h2>
+                        <p class="title">EROS</p>
+                        <p>L. 69 x H. 112 x P. 72. <br>
+                            Repose-pieds indépendant L. 56 x H. 44 x P. 42.</p>
+                        <p style="color: blue;"> 500 000 FCFA</p>
+                        <p><a href="TESTTOOO.html"><button class="buttonE">Acheter</button> </a><br> <button class="button00">En savoir plus</button></p>
+                      </div>
+                    </div>
+                  </div>
+                  <h2>Meubles, Tables & chaises</h2><hr>
+            <div class="row">
+                <div class="columnE">
+                  <div class="card">
+                    <div class="SOS">
+                        <img class="img55" src="Assets/img/IAN_IMG/Mobilier/M1.jpg" alt="Jane" style="width:100%" class="image">
+                        <div class="overlay">
+                          <img class="img55" src="Assets/img/IAN_IMG/Mobilier/M1B.jpg" alt="Mike" style="width:100%">
+                        </div>
+                      </div>
+                    <div class="containerE  slideanim">
+                      <h2>Vitrine 1 porte ECLIPSE</h2>
+                      <p class="title">ECLIPSE</p>
+                      <p>RÉALISABLES EN VÉRITABLE CHÊNE FRANÇAIS COMME EN LAQUE. <br>
+                        L. 115 x H. 170 x P. 45..</p>
+                      <p style="color: blue;">86 000 FCFA</p>
+                      <p><a href="TESTTOOO.html"><button class="buttonE">Acheter</button> </a><br> <button class="button00">En savoir plus</button></p>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="columnE">
+                  <div class="card">
+                    <div class="SOS">
+                        <img class="img55" src="Assets/img/IAN_IMG/Mobilier/M2.jpg" alt="Jane" style="width:100%" class="image">
+                        <div class="overlay">
+                          <img class="img55" src="Assets/img/IAN_IMG/Mobilier/M2B.jpg" alt="Mike" style="width:100%">
+                        </div>
+                      </div>
+                    <div class="containerE  slideanim">
+                      <h2>Table de repas MASSIVE</h2>
+                      <p class="title">MASSIVE</p>
+                      <p>DU SUR MESURE POUR VOTRE TABLE EN BOIS MASSIF. <br>
+                        L. 200 x H. 75 x P. 110 cm.</p>
+                      <p style="color: blue;">170 000 FCFA</p>
+                      <p><a href="TESTTOOO.html"><button class="buttonE">Acheter</button> </a><br><button class="button00">En savoir plus</button></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="columnE">
+                  <div class="card">
+                    <div class="SOS">
+                        <img class="img55" src="Assets/img/IAN_IMG/Mobilier/M3.jpg" alt="Jane" style="width:100%" class="image">
+                        <div class="overlay">
+                          <img class="img55" src="Assets/img/IAN_IMG/Mobilier/M3B.jpg" alt="Mike" style="width:100%">
+                        </div>
+                      </div>
+                    <div class="containerE  slideanim">
+                      <h2>Table basse NUDE</h2>
+                      <p class="title">NUDE</p>
+                      <p>Une table basse majestueuse<br> L. 120 x H. 30 x P. 90. <br>
+                        L. 230 x H. 71/98 x P. 110.</p>
+                      <p style="color: blue;">210 000 FCFA</p>
+                      <p><a href="TESTTOOO.html"><button class="buttonE">Acheter</button> </a><br> <button class="button00">En savoir plus</button></p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+        <div id="body4">
+          <h1>Ménager</h1><hr>
+            <div class="row">
+                <div class="columnE">
+                  <div class="card">
+                    <img class="img55" src="Assets/img/IAN_IMG/Menage/ME1.jpg" alt="Jane" style="width:100%">
+                    <div class="containerE  slideanim">
+                      <h2>3 en 1 Pods</h2>
+                      <p class="title">ARIEL</p>
+                      <p>Boîte de 27 doses de lessive liquide concentrée</p>
+                      <p style="color: blue;">7 500 FCFA</p>
+                      <p><a href="TESTTOOO.html"><button class="buttonE">Acheter</button> </a><br> <button class="button00">En savoir plus</button></p>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="columnE">
+                  <div class="card">
+                    <img class="img55" src="Assets/img/IAN_IMG/Menage/ME2.jpg" alt="Mike" style="width:100%">
+                    <div class="containerE  slideanim">
+                      <h2>Lingettes Antibactériennes</h2>
+                      <p class="title">Mr. Propre</p>
+                      <p>Rien de le resiste <br> Nettoyer tous type de surface</p>
+                      <p style="color: blue;">2 000 FCFA</p>
+                      <p><a href="TESTTOOO.html"><button class="buttonE">Acheter</button> </a><br><button class="button00">En savoir plus</button></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="columnE">
+                  <div class="card">
+                    <img class="img55" src="Assets/img/IAN_IMG/Menage/ME3.jpg" alt="John" style="width:100%">
+                    <div class="containerE  slideanim">
+                      <h2>Lotus Confort</h2>
+                      <p class="title">LOTUS</p>
+                      <p>Double épaisseur<br> Equilibre parfait entre douceur et résistance</p>
+                      <p style="color: blue;">5 000 FCFA</p>
+                      <p><a href="TESTTOOO.html"><button class="buttonE">Acheter</button> </a><br> <button class="button00">En savoir plus</button></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="columnE">
+                    <div class="card">
+                      <img class="img55" src="Assets/img/IAN_IMG/Menage/ME4.jpg" alt="John" style="width:100%">
+                      <div class="containerE  slideanim">
+                        <h2>Balaie de Nettoyage</h2>
+                        <p class="title">MK00101</p>
+                        <p>Forme Ergonomique <br> Couleur Marron Jaune.</p>
+                        <p style="color: blue;">1 850 FCFA</p>
+                        <p><a href="TESTTOOO.html"><button class="buttonE">Acheter</button> </a><br> <button class="button00">En savoir plus</button></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="columnE">
+                    <div class="card">
+                      <img class="img55" src="Assets/img/IAN_IMG/Menage/ME5.jpg" alt="John" style="width:100%">
+                      <div class="containerE  slideanim">
+                        <h2>Savon antibactérien et <br> antiseptique</h2>
+                        <p class="title">BACTOL</p>
+                        <p>le savon Bactol vise la réduction prolongée des risques <br> de contraction et de propagation (main à main) des bactéries</p>
+                        <p style="color: blue;"> 1 300 FCFA</p>
+                        <p><a href="TESTTOOO.html"><button class="buttonE">Acheter</button> </a><br> <button class="button00">En savoir plus</button></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="columnE">
+                    <div class="card">
+                      <img class="img55" src="Assets/img/IAN_IMG/Menage/ME6.jpg" alt="John" style="width:100%">
+                      <div class="containerE  slideanim">
+                        <h2>Fauteuil relaxation EROS</h2>
+                        <p class="title">EROS</p>
+                        <p>L. 69 x H. 112 x P. 72. <br>
+                            Repose-pieds indépendant L. 56 x H. 44 x P. 42.</p>
+                        <p style="color: blue;"> 500 000 FCFA</p>
+                        <p><a href="TESTTOOO.html"><button class="buttonE">Acheter</button> </a><br> <button class="button00">En savoir plus</button></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <div id="body5">
+          <h2>Quelque produit...</h2><hr>
+            <div class="row">
+                <div class="columnE">
+                  <div class="card">
+                    <div class="SOS">
+                      <img class="img55" src="Assets/img/IAN_IMG/mode/yeezy.jpeg" alt="Jane" style="width:100%" class="image">
+                    </div>
+                    <div class="containerE  slideanim">
+                      <h2>NOM DU PRODUIT</h2>
+                      <p class="title">MARQUE</p>
+                      <p>CARACTERISTIQUE</p>
+                      <p style="color: blue;"> 20 000 FCFA</p>
+                      <p><a href="TESTTOOO.html"><button class="buttonE">Acheter</button> </a><br> <button data-toggle="popover" title="Galaxy s20 Ultra" 
+                        data-placement="top" data-content="Caméra. 108 Mpx. 3 capteurs. Taille d'écran. 6.9. pouces. 
+                        Définition. 3200 x 1440. pixels. Processeur Samsung. 12 Go, 16 Go. RAM. Batterie. 5000. mAh." class="button00">En savoir plus</button></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="columnE">
+                  <div class="card">
+                    <div class="SOS">
+                      <img class="img55" src="Assets/img/IAN_IMG/mode/nike.jpg" alt="Jane" style="width:100%" class="image">
+                
+                  </div>
+                    <div class="containerE  slideanim">
+                      <h2>NOM DU PRODUIT</h2>
+                      <p class="title">MARQUE</p>
+                      <p>CARACTERISTIQUE</p>
+                      <p style="color: blue;">35 000 FCFA</p>
+                      <p><a href="TESTTOOO.html"><button class="buttonE">Acheter</button> </a><br><button data-toggle="popover" title="DELL XPS 15" 
+                        data-placement="top" data-content="Ecran de 15.6'' avec résolution
+                         Full HD (1920 x 1080 pixels) Dalle IPS : couleurs lumineuses et angles de vision larges. 
+                         Puce graphique NVIDIA GeForce GTX 1050 Ti avec 4 Go de mémoire dédiée GDDR5." class="button00">En savoir plus</button></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="columnE">
+                  <div class="card">
+                    <div class="SOS">
+                      <img class="img55" src="Assets/img/IAN_IMG/mode/addidas.jpg" alt="Jane" style="width:100%" class="image">
+                      
+                  </div>
+                    <div class="containerE  slideanim">
+                      <h2>NOM DU PRODUIT</h2>
+                      <p class="title">MARQUE</p>
+                      <p>CARACTERISTIQUE</p>
+                      <p style="color: blue;">23 900 FCFA</p>
+                      <p><a href="TESTTOOO.html"><button class="buttonE">Acheter</button> </a><br> <button data-toggle="popover" title="Macbook pro 13"" 
+                        data-placement="top" data-content="Avec sa TouchBar et Touch ID, 
+                        l'Apple MacBook Pro 13 est un ultraportable équipé du processeur 
+                        Intel Core i5 et doté d'un écran IPS WQXGA de 13,3 pouces. 
+                        Il est compact par ses dimensions et embarque 512 Go de stockage 
+                        SSD avec 8 Go de mémoire vive." class="button00">En savoir plus</button></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="columnE">
+                    <div class="card">
+                      <div class="SOS">
+                        <img class="img55" src="Assets/img/IAN_IMG/mode/im7.jpg" alt="Jane" style="width:100%" class="image">
+                
+                    </div>
+                      <div class="containerE  slideanim">
+                        <h2>NOM DU PRODUIT</h2>
+                        <p class="title">MARQUE </p>
+                        <p>CARACTERISTIQUE</p>
+                        <p style="color: blue;">90 000 FCFA</p>
+                        <p><a href="TESTTOOO.html"><button class="buttonE">Acheter</button> </a><br> <button data-toggle="popover" title="DJI Inspire 2" 
+                          data-placement="top" data-content="3290 grammes. 7 kilomètres. 5.2 K.
+                          108 km/h. 27 minutes. 6000 mAh. 5000 mètres." class="button00">En savoir plus</button></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="columnE">
+                    <div class="card">
+                      <div class="SOS">
+                        <img class="img55" src="Assets/img/IAN_IMG/mode/im 18.18.56.jpg" alt="Jane" style="width:100%" class="image">
+                       
+                    </div>
+                      <div class="containerE  slideanim">
+                        <h2>NOM DU PRODUIT</h2>
+                        <p class="title">MARQUE</p>
+                        <p>CARACTERISTIQUE)</p>
+                        <p style="color: blue;"> 30 000 FCFA</p>
+                        <p><a href="TESTTOOO.html"><button class="buttonE">Acheter</button> </a> <br> <button data-toggle="popover" title="XBOX Series X" 
+                          data-placement="top" data-content="processeur 8 cœurs AMD Zen 2 (3,8 GHz ou 3,6 GHz avec SMT).
+                          puce graphique AMD Navi RDNA 2 (52 CU à 1,825 GHz, 12 TFLOPS FP32). 
+                          16 Go de GDDR6 (10 Go à 560 Go/s et 6 Go à 336 Go/s).
+                          1 To de stockage SSD NVME (2,4 Go/s en lecture, ou 4,8 Go/s avec compression)." class="button00">En savoir plus</button></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="columnE">
+                    <div class="card">
+                      <div class="SOS">
+                        <img class="img55" src="Assets/img/IAN_IMG/mode/chelsea.jpg" alt="Jane" style="width:100%" class="image">
+                       
+                    </div>
+                      <div class="containerE  slideanim">
+                        <h2>NOM DU PRODUIT</h2>
+                        <p class="title">MARQUE</p>
+                        <p>CARACTERISTIQUE</p>
+                        <p style="color: blue;"> 50 000 FCFA</p>
+                        <p><a href="TESTTOOO.html"><button class="buttonE">Acheter</button> </a><br> <button data-toggle="popover" title="Apple Watch Series 5" 
+                          data-placement="top" data-content="L’Apple Watch Series 5 conserve le design 
+                          introduit avec la Series 4, qui offre un écran plus large. Désormais,
+                           il peut être allumé en permanence. Disponible avec quatre finitions 
+                           (aluminium, acier inoxydable, titane ou céramique),cette montre embarque 
+                           toujours un GPS, un capteur cardiaque et, en option un module 4G." class="button00">En savoir plus</button></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <div id="body6">
+          <div class="content">
+
+            <div style="text-align:center;">
+                <h2 style="font-size: 40px;">Contactez Nous</h2>
+                <p style="color: rgb(255, 194, 194); font-size: medium;">Passez pour une tasse de café, ou laissez-nous un message:</p>
+            </div>
+            <div class="rowC">
+                <div class="columnC slideanim">
+                  <img  src="Assets/img/IAN_IMG/LOGO.jpg" style="width:100%">
+                </div>
+                <div class="columnC">
+                  <form action="/action_page.php" style="font-size: 20px;">
+                    <label for="fname">Noms</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Votre nom..." required="required">
+                    <label for="lname">Prenoms</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Votre prenom" required="required">
+                    <label for="country">Pays</label>
+                    <select id="country" name="country">
+                        <option value="cameroun">Cameroun</option>
+                        <option value="gabon">Gabon</option>
+                        <option value="congo">Congo</option>
+                        <option value="australia">Australie</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                        <option value="france">France</option>
+                    </select>
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Écrivez quelque chose.." style="height:170px"></textarea>
+                    <input type="submit" value="Envoyer">
+                  </form>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div id="body7">
+          <div class="about-section">
+            <h1>À propos du développeur</h1>
+            <p style="color: rgb(255, 194, 194);">NGOUNE Ian Bright Perfection</p>
+            <p style="color: rgb(255, 194, 194);">Né le 16 avril 2001, NGOUNE est un étudiant ingénieur à l'Institut Africain d'Informatique
+                <br>
+                Option Systémes Et Réséaux.
+            </p>
+          </div>
+
+          <h2 style="text-align:center">Profil</h2>
+        <div class="row">
+            <center>
+                <div class="columnA">
+                    <div class="card">
+                        <img src="Assets/img/IAN_IMG/hero_12_2x.jpg" alt="IAN" style="width:100%">
+                        <div class="containerA">
+                            <h2>Ian NGOUNE</h2>
+                            <p class="title">Développeur</p>
+                            <p>Numéro MoMo : <b> 6 73 91 80 46 </b> </p>
+                            <p>Vous pouvez me contacter en privé par mail </p>
+                            <p ><a href="mailto:ian.ngoune@gmail.com"><i class="fas fa-envelope mr-3"></i> ian.ngoune@gmail.com</a></p>
+                            <p><a href="mailto:ian.ngoune@gmail.com"><button class="buttonA">Contacter</button></a></p>
+                        </div>
+                    </div>
+                </div>
+            </center>
+        
+
+    </div>
+        </div>
+        
+        <hr>
+        
+        <footer class="page-footer font-small unique-color-dark">
+          <div class="container-- slideanim" >
+            <form action="/action_page.php">
+              <div class="row--">
+                <h2 style="text-align:center">Connectez-vous avec les médias sociaux ou manuellement</h2>
+                <div class="vl--">
+                  <span class="vl-innertext">ou</span>
+                </div>
+          
+                <div class="col--">
+                  <a href="https://fr-fr.facebook.com" class="fb btn--">
+                    <i class="fas fa-facebook fa-fw"></i> 
+                    Se connecter avec Facebook
+                   </a>
+                  <a href="https://twitter.com/login?lang=fr" class="twitter btn--">
+                    <i class="fas fa-twitter fa-fw"></i> Se connecter avec Twitter
+                  </a>
+                  <a href="#" class="google btn--"><i class="fas fa-google fa-fw">
+                    </i> Se connecter avec Google+
+                  </a>
+                </div>
+          
+                <div class="col--">
+                  <div class="hide-md-lg">
+                    <p>Or sign in manually:</p>
+                  </div>
+          
+                  <input type="text" name="username" placeholder="Nom d'utilisateur" required class="input--">
+                  <input type="password" name="password" placeholder="Mot de passe" required class="input--">
+                  <input type="submit" value="Login" class="input--s">
+                </div>
+                
+              </div>
+            </form>
+          </div>
+          
+          <div class="bottom-container">
+            <div class="row--">
+              <div class="col--">
+                <a href="#" style="color:white" class="btn--" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">S'inscrire</a>
+              </div>
+              <div class="col--">
+                <a href="#" style="color:white" class="btn--">mot de passe oublié ?</a>
+              </div>
+            </div>
+          </div>
+          
+            <!-- Footer Links -->
+            <div class="container1 text-center text-md-left mt-5">
+          
+              <!-- Grid row -->
+              <div class="row mt-3">
+          
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          
+                  <!-- Content -->
+                  <h4 class="text-uppercase font-weight-bold">ONLINE SHOPPING</h4>
+                  <hr style="width: 60px; border: 2px solid #6351ce; border-radius: 5px;">
+                  <p style="font-size: 18px; color: rgb(102, 85, 163);">Ce site un site de vente enligne. Effeectuez vos achat à de frais de livraison reduit😄</p>
+          
+                </div>
+                <!-- Grid column -->
+          
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          
+                  <!-- Links -->
+                  <h4 class="text-uppercase font-weight-bold">DES PRODUITS</h4>
+                  <hr style="width: 60px; border: 2px solid #6351ce; border-radius: 5px;">
+                  <p>
+                    <a href="ELECT.html">Electronique</a>
+                  </p>
+                  <p>
+                    <a href="Mobilier.html">Mobilier</a>
+                  </p>
+                  <p>
+                    <a href="Ménager.html">Ménager</a>
+                  </p>
+                  <p>
+                    <a href="About.html">Plus sur le Développeur</a>
+                  </p>
+          
+                </div>
+                <!-- Grid column -->
+          
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          
+                  <!-- Links -->
+                  <h4 class="text-uppercase font-weight-bold">LIENS UTILES</h4>
+                  <hr style="width: 60px; border: 2px solid #6351ce; border-radius: 5px;">
+                  <p>
+                    <a href="#!">Votre Compte</a>
+                  </p>
+                  <p>
+                    <a href="#!">Devenir un affilié</a>
+                  </p>
+                  <p>
+                    <a href="#!">Frais d'envoi</a>
+                  </p>
+                  <p>
+                    <a href="CONTACT.html">Aide</a>
+                  </p>
+          
+                </div>
+                <!-- Grid column -->
+          
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          
+                  <!-- Links -->
+                  <h4 class="text-uppercase font-weight-bold">Contact</h4>
+                  <hr style="width: 60px; border: 2px solid #6351ce; border-radius: 5px;">
+                  <p><span style="color: rgb(5, 105, 151);"><i class="fas fa-home mr-3" ></i> AKWA, PO 5750, DOUALA CAMMEROUN</span></p>
+                    <p ><a href="mailto:ian.ngoune@gmail.com"><i class="fas fa-envelope mr-3"></i> ian.ngoune@gmail.com</a></p>
+                    <p><a href="tel:+237673918046"><i class="fas fa-phone mr-3"></i> + 237 673 91 80 46</a></p>
+                    <p><a href="tel:+237697821278"><i class="fas fa-phone mr-3"></i> + 237 697 82 12 78</a></p>
+          
+                </div>
+                <!-- Grid column -->
+          
+              </div>
+              <!-- Grid row -->
+          
+            </div>
+            <!-- Footer Links -->
+          
+            <!-- Copyright -->
+            <div class="container2 text-center text-md-left mt-5">
+                <!-- Call to action -->
+             <ul class="list-unstyled list-inline text-center py-2">
+                <li class="list-inline-item">
+                  <h3>© 2021 Copyright :
+                <span style="color: rgb(151, 151, 151);"> NGOUNE Ian B.P.</span></h3>
+                <a href="#myPage" title="Remonter">
+                  <span class="glyphicon glyphicon-chevron-up"></span>
+                </a> 
+                </li>
+              </ul>
+              <!-- Call to action -->
+            </div>
+            <!-- Copyright -->
+          
+          </footer>
+          <!-- Footer -->
+        
+    </body>
+</html>

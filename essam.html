@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        easyShop | Home
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/essam.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/fonts/fontawesome-webfont5b62.eot" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <div class="container-fluid px-lg-5">
+                <nav class="navbar navbar-expand-lg navbar-light my-navbar">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <span class="logo">🅔🅐🅢🅨🅢🅗🅞🅟</span>
+                        </a>
+                        <div>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon">
+                                    <i class="fa fa-car"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-light" aria-current="page" href="#">Accueil</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" text-light href="#">Produits</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" text-light href="#">Promotions</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Categories
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li>
+                                            <a class="dropdown-item" href="#">Action</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" href="#" tabindex="-1">A propos</a>
+                                </li>
+                            </ul>
+                            <div class="loggin d-flex flex-row">
+                                <div>
+                                    <form class="form-inline my-2 my-lg-0">
+                                        <button class="header-btn mx-2 my-2 mb-1 my-sm-02" type="submit">connexion</button>
+                                    </form>
+                                </div>
+
+                                <i class="fa fa-shopping-cart mt-2 fa-2x" style="color: ghostwhite;"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="content-banner">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-12">
+                    <div class="banner-con text-center">
+                        <p class="first-title">
+                            easyShop,
+                        </p>
+                        <p class="banner-des">
+                            all your favorites is there just choose
+                        </p>
+                        <a class="banner-btn" href="#">start shopping</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div>
+        <section class="products mt-5">
+            <div>
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/img/essamPro1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="assets/js/essam.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var navbar = $('.header-inner');
+            $(window).scroll(function () {
+                if ($(window).scroll != 0) {
+                    navbar.addClass('navbar-scroll');
+                    var nav = $('.nav-item');
+                    nav.css('color', 'black');
+                }
+                else {
+                    navbar.remove('navbar-scroll');
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>

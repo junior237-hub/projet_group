@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+
+<!-- Mirrored from usebootstrap.com/preview/osteriax-master by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Jun 2021 13:54:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <!--<script nonce="ETZNwmZ5UU59zqd2r45vog==">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"fcf8d519de","applicationID":"13909","transactionName":"NTU0DRQNDwshOmIZBRM3dR8TDg84Nys/FRQYBSoLAxQKAjM=","queueTime":1,"applicationTime":23,"agent":"","atts":"DXgvW1wZQRQtPChSS1QOMhwLByUINi0+BFNaeCgcEAsQDismb0pTQGxqQFQBBUU5NQ=="}</script>
+    <script nonce="ETZNwmZ5UU59zqd2r45vog==">(window.NREUM||(NREUM={})).loader_config={licenseKey:"fcf8d519de",applicationID:"13909"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1169.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>-->
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <title>Osteriax Master Preview</title>
+        <meta name="description" content="Osteriax Master Preview &amp; Download" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
+
+    <link href="https://usebootstrap.com/assets/css/common.min.css?v=3" rel="stylesheet" />
+    <link href="https://usebootstrap.com/assets/ico/favicon.png" rel="icon" type="image/x-icon" />
+    <link href="https://usebootstrap.com/assets/ico/favicon.png" rel="shortcut icon" />
+    <link href="https://usebootstrap.com/assets/ico/favicon.png" rel="apple-touch-icon" />
+
+    <style>
+
+        body {
+            background-color: #000;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding-top: 0px!important;
+            }
+        }
+        .preview__envato-logo {
+            float: left;
+            padding: 0 20px;
+        }
+
+        .preview__header {
+            font-size: 12px;
+            height: 54px;
+            background-color: #34495e;
+            z-index: 100;
+            line-height: 54px;
+            margin-bottom: 1px;
+        }
+
+        .preview__envato-logo a {
+            display: inline-block;
+            position: absolute;
+            top: 11px;
+            text-indent: -9999px;
+            height: 34px;
+            width: 36px;
+            background: url(https://usebootstrap.com/assets/img/logo.png);
+            background-size: 36px 34px;
+        }
+
+        .preview__actions {
+            float: right;
+        }
+
+        .preview__action--close {
+            border-left: 1px solid rgba(0, 0, 0, .3);
+        }
+
+        .preview__action--close a {
+            color: #999999;
+            text-decoration: none;
+        }
+
+        .preview__action--close a:hover {
+            color: white;
+        }
+
+        .preview__action--close a i, .preview__action--close a svg {
+            color: white;
+            font-size: 16px;
+            margin-right: 10px;
+            vertical-align: middle;
+            margin-top: -1px;
+        }
+
+        .preview__action--buy, .preview__action--close {
+            display: inline-block;
+            padding: 0 20px;
+        }
+
+        .full-screen-preview {
+            height: 100%;
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+        }
+
+        .full-screen-preview__frame {
+            width: 100%;
+            background-color: white;
+        }
+
+        iframe {
+            border: 0;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    
+    <script src="https://usebootstrap.com/assets/js/preview.js" nonce="ETZNwmZ5UU59zqd2r45vog=="></script>
+
+    <script nonce="ETZNwmZ5UU59zqd2r45vog==">
+    //<![CDATA[
+    //function to fix height of iframe!
+    var calcHeight = function() {
+        var headerDimensions = $('.preview__header').height();
+        $('.full-screen-preview__frame').height($(window).height() - headerDimensions);
+    }
+
+    $(document).ready(function() {
+        calcHeight();
+    });
+
+    $(window).resize(function() {
+        calcHeight();
+    }).load(function() {
+        calcHeight();
+    });
+
+    //]]>
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34569399-9" type='text/javascript'></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-34569399-9');
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="full-screen-preview">
+    <div class="preview__header" data-view="ctaHeader">
+        <div class="preview__envato-logo">
+            <a href="https://usebootstrap.com/theme/osteriax-master">UseBootstrap</a>
+        </div>
+
+        <div class="preview__actions">
+            <div class="preview__action--buy">
+                <a class="btn btn-primary"
+                    href="https://usebootstrap.com/theme/osteriax-master">Download</a>
+            </div>
+
+            <div class="preview__action--close">
+                <a href="https://usebootstrap.com/preview-no-frame/osteriax-master/">
+                    <i class="fas fa-times"></i><span>Remove Frame</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <iframe class="full-screen-preview__frame" src="https://usebootstrap.com/preview-no-frame/osteriax-master/"
+        name="preview-frame" frameborder="0" noresize="noresize" data-view="fullScreenPreview"
+        allow="geolocation 'self'; autoplay 'self'">
+    </iframe>
+
+
+    <script nonce="ETZNwmZ5UU59zqd2r45vog==">
+    //<![CDATA[
+    $(function() {
+        viewloader.execute(Views);
+    });
+
+    //]]>
+    </script>
+
+    <script nonce="ETZNwmZ5UU59zqd2r45vog==">
+    //<![CDATA[
+
+    function domLoaded() {
+        return new Promise(resolve => {
+            if (
+                document.readyState === 'interactive' ||
+                document.readyState === 'complete'
+            ) {
+                resolve()
+            } else {
+                document.addEventListener(
+                    'DOMContentLoaded',
+                    () => {
+                        resolve()
+                    }, {
+                        capture: true,
+                        once: true,
+                        passive: true
+                    }
+                )
+            }
+        })
+    }
+
+    function loadLinkingForAllAccounts() {
+        domLoaded().then(() => {
+            var ACCOUNTS = ["m"];
+            window._envGaTrackerNames = ACCOUNTS;
+
+            for (var i = 0; i < ACCOUNTS.length; i++) {
+                t = ACCOUNTS[i];
+
+                ga(t + '.require', 'linker');
+
+                ga(t + '.require', 'linkid', 'https://usebootstrap.com/preview/linkid.js');
+            };
+
+            document.body.addEventListener('click', function(event) {
+                decorateLink(event);
+            });
+            document.body.addEventListener('contextmenu', function(event) {
+                // Aside from a normal click, we need to handle the variety of ways users
+                // can open a link in a new tab
+                // Right click to open context menu
+                decorateLink(event);
+            });
+            document.body.addEventListener('mousedown', function(event) {
+                // Aside from a normal click, we need to handle the variety of ways users
+                // can open a link in a new tab
+                // Middle mouse button click
+                if (event.button === 1) {
+                    decorateLink(event);
+                }
+            });
+        });
+    }
+
+    function decorateLink(event) {
+
+        var ACCOUNTS = ["m"];
+        window._envGaTrackerNames = ACCOUNTS;
+
+        var currentTarget = jQuery(event.target);
+        var link = currentTarget.closest('a')[0];
+        var ourDomains = ["activeden.net", "audiojungle.net", "themeforest.net", "videohive.net", "graphicriver.net",
+            "3docean.net", "codecanyon.net", "photodune.net", "market.styleguide.envato.com", "elements.envato.com",
+            "build.envatohostedservices.com", "author.envato.com", "tutsplus.com", "sites.envato.com"
+        ];
+        var filteredDomains = ourDomains.filter(function(domain) {
+            return domain !== document.location.hostname;
+        });
+
+        for (var i = 0; i < ACCOUNTS.length; i++) {
+            t = ACCOUNTS[i];
+
+            if (link && link.href) {
+                if (filteredDomains.includes(link.hostname) || currentSiteLinkOpensInNewWindow(link)) {
+                    ga(t + '.linker:decorate', link)
+                }
+            }
+        }
+    }
+
+    function currentSiteLinkOpensInNewWindow(link) {
+        return document.location.hostname === link.hostname && link.target === '_blank';
+    }
+
+    //]]>
+    </script>
+</body>
+
+
+<!-- Mirrored from usebootstrap.com/preview/osteriax-master by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Jun 2021 13:54:10 GMT -->
+</html>
